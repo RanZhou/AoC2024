@@ -15,7 +15,7 @@ The only "smart" part I made was to split strings by the RE matches in a certain
 It's not the best code I ever did. One mistake I made was wrongfully thinking `=~/MAS/g` + `=~/SAM/g` would be equivalent to `=~/SAM|MAS/g`, which turned out to be a total of ~2h debugging until I realize that they're not same (Maybe I should've asked ChatGPT first instead). The `=~/SAM|MAS/g` would only return one match for a palindrome sequence (such as MASAM or SAMAS etc.), whereas you would get two matches if you did it the first way. Lessons are learned.
 
 ## Day 5
-The recursive function would be your best friend for part 2. My part 2 code is essentially a copy of part 1 with one more function to adjust the order by swapping trouble variables pairs that break the rules. Although I thought the 2nd part could be potentially ordering items while working on part 1, I didn't think efficient to functionize it. So I did that in part 2.
+The recursive function would be your best friend for part 2. My part 2 code is essentially a copy of part 1 with one more function to adjust the order by swapping trouble variables pairs that break the rules. Although I thought the 2nd part could be potentially ordering items while working on part 1, I didn't think hard enough to functionalize it. So I wrapped that in part 2.
 
 ## Day 6
 TBD
